@@ -10,6 +10,8 @@
               :project_id => @project, :issue_id => @issue, :user_id => User.current.id },
             :method => :get, :id => 'query_form') do %>
   <%= hidden_field_tag 'user_id', User.current.id %>
+  <%= hidden_field_tag 'issue_id', @issue.id unless @issue.nil?%>
+  <%= hidden_field_tag 'project_id', @project.identifier unless @project.nil?%>
   <% @report.criteria.each do |criterion| %>
     <%= hidden_field_tag 'criteria[]', criterion, :id => nil %>
   <% end %>
