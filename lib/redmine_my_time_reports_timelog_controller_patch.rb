@@ -105,7 +105,6 @@ module RedmineMyTimeReportsTimelogControllerPatch
     
   def get_optional_user
     @user = User.find(params[:user_id]) unless params[:user_id].nil?
-    logger.debug "@user = #{@user.inspect}"
   end
   
 end

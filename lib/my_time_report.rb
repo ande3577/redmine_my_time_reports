@@ -20,7 +20,6 @@ module Redmine
        end
        
        def available_criteria
-         Rails.logger.debug "loading available criteria"
          @available_criteria || load_available_criteria
        end
         
