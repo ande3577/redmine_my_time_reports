@@ -1,3 +1,5 @@
+# THIS PLUGIN IS MADE OBSOLETE BY FILTERING OF TIME REPORTS IN 2.3
+
 # Redmine My Time Reports
 
 A plugin to allow viewing a time report containing only entries by the current user.
